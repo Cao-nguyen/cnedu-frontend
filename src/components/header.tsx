@@ -10,24 +10,24 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <header className="flex gap-[20px] w-full h-[60px] bg-[#282a36] fixed top-0 items-center">
+        <header className="flex gap-[15px] w-full h-[60px] bg-[#282a36] fixed top-0 items-center">
             <Link href="/">
-                <Image className="ml-[20px] w-[60px]" src={logo} alt="logo" />
+                <Image className="ml-[20px] w-[60px] mr-[20px]" src={logo} alt="logo" />
             </Link>
             <Link
                 href="/"
-                className={`font-bold px-[10px] py-[5px] rounded-[5px] ${pathname === '/'
-                    ? 'bg-[#FF883E] font-bold text-white'
-                    : 'text-white hover:bg-[#44475a]'
+                className={`uppercase font-bold px-[10px] py-[5px] rounded-[5px] ${pathname === '/'
+                    ? 'text-[#FF883E]'
+                    : 'text-white'
                     }`}
             >
                 Trang chủ
             </Link>
             <Link
                 href="/admin/dashboard"
-                className={`font-bold px-[10px] py-[5px] rounded-[5px] ${pathname === '/admin/dashboard'
-                    ? 'bg-[#FF883E] text-white'
-                    : 'text-white hover:bg-[#44475a]'
+                className={`uppercase font-bold px-[10px] py-[5px] rounded-[5px] ${pathname === '/admin/dashboard'
+                    ? 'text-[#FF883E]'
+                    : 'text-white'
                     }`}
             >
                 Giới thiệu
