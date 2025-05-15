@@ -10,14 +10,14 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <header className="flex gap-[15px] w-full h-[60px] bg-[#282a36] fixed top-0 items-center">
+        <header className="flex gap-[15px] w-full h-[65px] bg-header fixed top-0 items-center">
             <Link href="/">
-                <Image className="ml-[20px] w-[60px] mr-[20px]" src={logo} alt="logo" />
+                <Image className="ml-[20px] w-[55px] mr-[20px]" src={logo} alt="logo" />
             </Link>
             <Link
                 href="/"
                 className={`uppercase font-bold px-[10px] py-[5px] rounded-[5px] ${pathname === '/'
-                    ? 'text-[#FF883E]'
+                    ? 'text-main'
                     : 'text-white'
                     }`}
             >
@@ -26,7 +26,7 @@ export default function Header() {
             <Link
                 href="/admin/dashboard"
                 className={`uppercase font-bold px-[10px] py-[5px] rounded-[5px] ${pathname === '/admin/dashboard'
-                    ? 'text-[#FF883E]'
+                    ? 'text-main'
                     : 'text-white'
                     }`}
             >

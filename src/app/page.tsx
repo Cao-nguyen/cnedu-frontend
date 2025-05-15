@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="pt-[60px]">
+    <div className="pt-[60px] h-[544px]">
       <div className="mt-[40px] text-center">
         <Link href={"/admin/dashboard"} className="mx-[10px] bg-[#FF883E] text-white font-bold px-[15px] py-[10px] rounded-[5px]">Tổng quan</Link>
       </div>
