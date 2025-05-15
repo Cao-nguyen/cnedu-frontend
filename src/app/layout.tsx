@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter_Tight } from 'next/font/google'
-import logo from "../../public/logo.png"
-import Image from 'next/image'
+import Header from "../components/header"
 import '../globals.css'
 
 const inter = Inter_Tight({ subsets: ['latin'] })
@@ -19,12 +18,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="w-[100%] h-[60px] bg-[#282a36] fixed top-0">
-          <Image className="ml-[20px] w-[60px]" src={logo} alt="" />
-        </header>
+        <Header />
         {children}
       </body>
     </html >
